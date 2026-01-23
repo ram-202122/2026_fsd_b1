@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page description">
+    <meta name="keywords" content="html, tags">
+    <meta name="author" content="Author Name">
+    <meta http-equiv="refresh" content="300">
+    <title>All HTML Tags</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="alternate" href="alternate.html">
+    <base href="https://example.com/">
+</head>
+<body>
+
+<!-- Document Structure -->
+<header>
+    <h1>Main Heading</h1>
+    <nav>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Headings -->
+    <section id="section1">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <hgroup>
+            <h2>Main Title</h2>
+            <p>Subtitle</p>
+        </hgroup>
+    </section>
+
+    <!-- Text Content & Formatting -->
+    <article>
+        <h2>Text Formatting</h2>
+        
+        <p>Regular paragraph with <b>bold</b>, <strong>strong</strong>, <i>italic</i>, <em>emphasis</em>, <u>underline</u>, <s>strikethrough</s>, <mark>highlight</mark>, <small>small</small>, <del>deleted</del>, <ins>inserted</ins>, <sub>subscript</sub>, and <sup>superscript</sup> text.</p>
+        
+        <p>Code and technical: <code>code</code>, <kbd>keyboard</kbd>, <samp>sample</samp>, <var>variable</var>, <tt>teletype</tt></p>
+        
+        <p>Semantic: <abbr title="Abbreviation">ABBR</abbr>, <acronym title="Acronym">NASA</acronym>, <cite>citation</cite>, <dfn>definition</dfn>, <q>short quote</q>, <time datetime="2024-01-23">date</time></p>
+        
+        <blockquote cite="source.html">
+            Block quotation
+        </blockquote>
+        
+        <pre>Preformatted
+    text    with
+        spacing</pre>
+        
+        <address>
+            Contact information<br>
+            123 Street<br>
+            City, State
+        </address>
+        
+        <p>Line break:<br>New line</p>
+        <p>Word<wbr>break<wbr>opportunity</p>
+        <hr>
+        
+        <ruby>
+            漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>
+            字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+        </ruby>
+        
+        <bdi>Bidirectional isolation</bdi>
+        <bdo dir="rtl">Bidirectional override</bdo>
+        
+        <data value="123">Data with machine-readable value</data>
+    </article>
+
+    <!-- Lists -->
+    <section id="section2">
+        <h2>Lists</h2>
+        
+        <ul>
+            <li>Unordered item 1</li>
+            <li>Unordered item 2</li>
+        </ul>
+        
+        <ol>
+            <li>Ordered item 1</li>
+            <li>Ordered item 2</li>
+        </ol>
+        
+        <ol type="A" start="3" reversed>
+            <li>Styled ordered list</li>
+            <li value="10">Custom value</li>
+        </ol>
+        
+        <dl>
+            <dt>Term 1</dt>
+            <dd>Definition 1</dd>
+            <dt>Term 2</dt>
+            <dd>Definition 2</dd>
+        </dl>
+        
+        <menu>
+            <li>Menu item 1</li>
+            <li>Menu item 2</li>
+        </menu>
+    </section>
+
+    <!-- Links -->
+    <section>
+        <h2>Links</h2>
+        <a href="https://example.com">External link</a> <br>
+        <a href="page.html" target="_blank" rel="noopener noreferrer">New tab</a> <br>
+        <a href="#top">Anchor link</a> <br>
+        <a href="mailto:email@example.com">Email link</a> <br>
+        <a href="tel:+1234567890">Phone link</a><br>
+        <a href="file.pdf" download>Download link</a>
+    </section>
+
+    <!-- Media Elements -->
+    <section>
+        <h2>Images</h2>
+        
+        <img src="image.jpg" alt="Description" width="300" height="200">
+        
+        <figure>
+            <img src="diagram.jpg" alt="Diagram">
+            <figcaption>Image caption</figcaption>
+        </figure>
+        
+        <picture>
+            <source media="(min-width: 800px)" srcset="large.jpg">
+            <source media="(min-width: 400px)" srcset="medium.jpg">
+            <img src="small.jpg" alt="Responsive image">
+        </picture>
+        
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" href="page1.html" alt="Rectangle">
+            <area shape="circle" coords="337,300,44" href="page2.html" alt="Circle">
+            <area shape="poly" coords="140,121,181,116,204,160" href="page3.html" alt="Polygon">
+        </map>
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+        
+        <canvas id="myCanvas" width="200" height="100">
+            Canvas fallback content
+        </canvas>
+    </section>
+
+    <section>
+        <h2>Audio & Video</h2>
+        
+        <audio controls preload="auto" loop muted>
+            <source src="audio.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+            Your browser does not support audio.
+        </audio>
+        
+        <video controls width="320" height="240" poster="poster.jpg" autoplay muted>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.webm" type="video/webm">
+            <track kind="subtitles" src="subs_en.vtt" srclang="en" label="English">
+            <track kind="captions" src="captions.vtt" srclang="en" label="English captions">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <section>
+        <h2>Embedded Content</h2>
+        
+        <iframe src="page.html" width="500" height="300" title="Frame" sandbox="allow-scripts"></iframe>
+        
+        <embed src="file.pdf" type="application/pdf" width="500" height="300">
+        
+        <object data="flash.swf" type="application/x-shockwave-flash" width="400" height="300">
+            <param name="movie" value="flash.swf">
+            <param name="quality" value="high">
+            Fallback content
+        </object>
+    </section>
+
+    <!-- Tables -->
+    <section>
+        <h2>Tables</h2>
+        
+        <table border="1" cellpadding="5" cellspacing="0">
+            <caption>Table Title</caption>
+            <colgroup>
+                <col span="2" style="background-color: #f0f0f0">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">Header 1</th>
+                    <th scope="col">Header 2</th>
+                    <th scope="col">Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Row 1</th>
+                    <td>Data 1</td>
+                    <td rowspan="2">Rowspan</td>
+                </tr>
+                <tr>
+                    <th scope="row">Row 2</th>
+                    <td colspan="2">Colspan</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Footer 1</th>
+                    <td>Footer 2</td>
+                    <td>Footer 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <!-- Forms -->
+    <section>
+        <h2>Forms</h2>
+        
+        <form action="/submit" method="post" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="on" novalidate>
+            <fieldset disabled>
+                <legend>Disabled Fieldset</legend>
+                <input type="text" name="disabled-input">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Form Inputs</legend>
+                
+                <label for="text">Text:</label>
+                <input type="text" id="text" name="text" value="default" placeholder="Enter text" size="30" maxlength="50" required readonly>
+                <br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" autocomplete="current-password">
+                <br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" multiple>
+                <br>
+                
+                <label for="tel">Tel:</label>
+                <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <br>
+                
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url">
+                <br>
+                
+                <label for="search">Search:</label>
+                <input type="search" id="search" name="search">
+                <br>
+                
+                <label for="number">Number:</label>
+                <input type="number" id="number" name="number" min="0" max="100" step="5" value="50">
+                <br>
+                
+                <label for="range">Range:</label>
+                <input type="range" id="range" name="range" min="0" max="100" step="10" value="50">
+                <br>
+                
+                <label for="color">Color:</label>
+                <input type="color" id="color" name="color" value="#ff0000">
+                <br>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" min="2024-01-01" max="2024-12-31">
+                <br>
+                
+                <label for="datetime-local">Datetime-local:</label>
+                <input type="datetime-local" id="datetime-local" name="datetime-local">
+                <br>
+                
+                <label for="month">Month:</label>
+                <input type="month" id="month" name="month">
+                <br>
+                
+                <label for="week">Week:</label>
+                <input type="week" id="week" name="week">
+                <br>
+                
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time">
+                <br>
+                
+                <label for="file">File:</label>
+                <input type="file" id="file" name="file" accept=".jpg,.png,.pdf" multiple>
+                <br>
+                
+                <input type="hidden" name="hidden" value="secret">
+                
+                <label>
+                    <input type="checkbox" name="check1" value="yes" checked>
+                    Checkbox 1
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="check2" value="yes" indeterminate>
+                    Checkbox 2
+                </label>
+                <br>
+                
+                <label>
+                    <input type="radio" name="radio" value="option1" checked>
+                    Radio 1
+                </label>
+                
+                <label>
+                    <input type="radio" name="radio" value="option2">
+                    Radio 2
+                </label>
+                <br>
+                
+                <label for="select">Select:</label>
+                <select id="select" name="select" size="3" multiple>
+                    <optgroup label="Group 1">
+                        <option value="1" selected>Option 1</option>
+                        <option value="2" disabled>Option 2</option>
+                    </optgroup>
+                    <optgroup label="Group 2">
+                        <option value="3">Option 3</option>
+                    </optgroup>
+                </select>
+                <br>
+                
+                <label for="datalist-input">Datalist:</label>
+                <input list="data" id="datalist-input" name="datalist-input">
+                <datalist id="data">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Edge">
+                </datalist>
+                <br>
+                
+                <label for="textarea">Textarea:</label>
+                <textarea id="textarea" name="textarea" rows="4" cols="50" wrap="soft" spellcheck="true">Default text</textarea>
+                <br>
+                
+                <label for="output-calc">Calculation result:</label>
+                <output id="output-calc" name="result" for="number range">Result here</output>
+                <br>
+                
+                <label for="progress">Progress:</label>
+                <progress id="progress" value="70" max="100">70%</progress>
+                <br>
+                
+                <label for="meter">Meter:</label>
+                <meter id="meter" value="0.6" min="0" max="1" low="0.3" high="0.7" optimum="0.8">60%</meter>
+                <br><br>
+                
+                <button type="submit" formaction="/alt-submit" formmethod="get">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button">Button</button>
+                <button type="submit" formnovalidate>Submit without validation</button>
+                
+                <input type="submit" value="Submit Input">
+                <input type="reset" value="Reset Input">
+                <input type="button" value="Button Input">
+                <input type="image" src="submit.png" alt="Submit" width="50" height="50" formaction="/image-submit">
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Interactive Elements -->
+    <section>
+        <h2>Interactive Elements</h2>
+        
+        <details open>
+            <summary>Click to toggle</summary>
+            <p>Hidden content revealed</p>
+        </details>
+        
+        <dialog open>
+            <p>Dialog content</p>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
+    </section>
+
+    <!-- Grouping & Organization -->
+    <section>
+        <h2>Grouping Elements</h2>
+        
+        <div>Division (block-level container)</div>
+        <span>Span (inline container)</span>
+        
+        <p>Paragraph with <span>inline span</span> element</p>
+    </section>
+
+    <!-- Script & Style Related -->
+    <section>
+        <h2>Script Elements</h2>
+        
+        <noscript>
+            <p>JavaScript is disabled</p>
+        </noscript>
+        
+        <template id="template">
+            <p>Template content (not rendered)</p>
+        </template>
+        
+        <slot name="slot-name">Slot fallback</slot>
+    </section>
+
+    <!-- Special Characters -->
+    <section>
+        <h2>Special Characters</h2>
+        <p>&lt; &gt; &amp; &quot; &apos; &nbsp; &copy; &reg; &trade; &cent; &pound; &yen; &euro; &sect; &para;</p>
+    </section>
+</main>
+
+<aside>
+    <h2>Sidebar</h2>
+    <p>Additional content</p>
+    <search>
+        <form>
+            <input type="search" placeholder="Search...">
+            <button>Search</button>
+        </form>
+    </search>
+</aside>
+
+<footer>
+    <p>Footer content &copy; 2024</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
