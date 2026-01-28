@@ -7,5 +7,102 @@
 </head>
 <body>
     <h1>This is a website for tables.</h1>
+    <table border="1" width="100%" cellpadding="10" cellspacing="10">
+        <thead>
+        <tr>
+            <th>Dec</th>
+            <th>Hex</th>
+            <th>Char</th>
+            <th>Description</th>
+        </tr>
+        
+        
+        <tr>
+            <td>-----</td>
+            <td>-------</td>
+            <td>----------</td>
+            <td>------------</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>0</td>
+            <td>00</td>
+            <td>Null</td>
+            <td>Null</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>01</td>
+            <td>SOH</td>
+            <td>Start of Heading</td>
+        </tr>
+        </tbody>
+        <tfoot>
+
+        <tr>
+            <td>2</td>
+            <td>02</td>
+            <td>STX</td>
+            <td>Start of Text</td>
+        </tr>
+        </tfoot>
+    </table>
+    <br>
+    <hr>
+    <table border="1" cellpadding="20" cellspacing="10">
+        <caption>COmplex Table with Merged Cells</caption>
+        <colgroup>
+            <col span="2" style="background-color: aqua;"/>
+            <col span="2" style="background-color: bisque;"/>
+        </colgroup>
+        <tr>
+            <td colspan="2">Cell 1 & Cell 2</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 4</td>
+        </tr>
+        <tr>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+            <td>Cell 7</td>
+            <td>Cell 8</td>
+            <td>Cell 9</td>
+        </tr>
+        <tr>
+            <td>Cell 10</td>
+            <td>Cell 11</td>
+            <td colspan="2" rowspan="2">Cell 12</td>
+            
+            <td>Cell 14</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Cell 1</td>
+            <td>Cell 15</td>
+            
+            
+            <td>Cell 18</td>
+        </tr>
+        <tr>
+            
+            <td>Cell 19</td>
+            <td>Cell 20</td>
+            <td>Cell 21</td>
+            <td>Cell 22</td>
+        </tr>
+    </table>
+
+    <table border="1" cellpadding="20" cellspacing="10">
+        <tr>
+            <td>
+                  <table border="1" cellpadding="20" cellspacing="10">
+                    <tr>
+                        <td>Nested Table 1</td>
+                        <td>Nested Table 2</td>
+                    </tr>
+                  </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

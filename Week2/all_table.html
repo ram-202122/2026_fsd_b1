@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #4CAF50;
+            margin-top: 40px;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tbody tr:hover {
+            background-color: #e8f5e9;
+        }
+        tfoot {
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+        .example-section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 HTML Table Examples</h1>
+
+    <!-- Example 1: Simple Table -->
+    <div class="example-section">
+        <h2>Example 1: Simple Table</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>25</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Sarah Smith</td>
+                <td>30</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>Mike Johnson</td>
+                <td>28</td>
+                <td>Paris</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Example 2: Table with Caption -->
+    <div class="example-section">
+        <h2>Example 2: Table with Caption</h2>
+        <table>
+            <caption>Student Information 2024</caption>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Alice Brown</td>
+                <td>Mathematics</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Bob Wilson</td>
+                <td>Science</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>Charlie Davis</td>
+                <td>English</td>
+                <td>A-</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Example 3: Table with thead, tbody, tfoot -->
+    <div class="example-section">
+        <h2>Example 3: Table with thead, tbody, tfoot</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laptop</td>
+                    <td>$1,000</td>
+                    <td>2</td>
+                    <td>$2,000</td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>$20</td>
+                    <td>5</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Keyboard</td>
+                    <td>$75</td>
+                    <td>3</td>
+                    <td>$225</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Grand Total</td>
+                    <td>$2,325</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- Example 4: Table with Colspan -->
+    <div class="example-section">
+        <h2>Example 4: Table with Colspan (Merge Columns)</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Phone Numbers</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>John Smith</td>
+                <td>123-456-7890</td>
+                <td>987-654-3210</td>
+                <td>john@email.com</td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>555-123-4567</td>
+                <td>555-987-6543</td>
+                <td>jane@email.com</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Example 5: Table with Rowspan -->
+    <div class="example-section">
+        <h2>Example 5: Table with Rowspan (Merge Rows)</h2>
+        <table>
+            <tr>
+                <th>Student</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td rowspan="3">John Smith</td>
+                <td>Math</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Sarah Johnson</td>
+                <td>Math</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>87</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>94</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Example 6: Table with Colgroup -->
+    <div class="example-section">
+        <h2>Example 6: Table with Colgroup (Column Styling)</h2>
+        <table>
+            <colgroup>
+                <col style="background-color: #e3f2fd;">
+                <col style="background-color: #fff3e0;">
+                <col style="background-color: #f3e5f5;">
+            </colgroup>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>25</td>
+                <td>Paris</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+                <td>Tokyo</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>28</td>
+                <td>Sydney</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Example 7: Nested Table -->
+    <div class="example-section">
+        <h2>Example 7: Nested Table</h2>
+        <table>
+            <tr>
+                <th>Employee</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>
+                    <table style="width: 100%; margin: 0;">
+                        <tr>
+                            <td><strong>Age:</strong> 30</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Department:</strong> IT</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Salary:</strong> $75,000</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>
+                    <table style="width: 100%; margin: 0;">
+                        <tr>
+                            <td><strong>Age:</strong> 28</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Department:</strong> HR</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Salary:</strong> $65,000</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Example 8: Employee Directory -->
+    <div class="example-section">
+        <h2>Example 8: Complete Employee Directory</h2>
+        <table>
+            <caption>Employee Directory 2024</caption>
+            <colgroup>
+                <col style="width: 10%;">
+                <col style="width: 25%;">
+                <col style="width: 20%;">
+                <col style="width: 20%;">
+                <col style="width: 25%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>John Smith</td>
+                    <td>IT</td>
+                    <td>$75,000</td>
+                    <td>john@company.com</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Sarah Johnson</td>
+                    <td>HR</td>
+                    <td>$65,000</td>
+                    <td>sarah@company.com</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Mike Davis</td>
+                    <td>Sales</td>
+                    <td>$70,000</td>
+                    <td>mike@company.com</td>
+                </tr>
+                <tr>
+                    <td>004</td>
+                    <td>Emily Wilson</td>
+                    <td>Marketing</td>
+                    <td>$68,000</td>
+                    <td>emily@company.com</td>
+                </tr>
+                <tr>
+                    <td>005</td>
+                    <td>David Brown</td>
+                    <td>Finance</td>
+                    <td>$80,000</td>
+                    <td>david@company.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total Employees: 5 | Average Salary: $71,600</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- Example 9: Sales Report -->
+    <div class="example-section">
+        <h2>Example 9: Monthly Sales Report</h2>
+        <table>
+            <caption>Sales Report - January 2024</caption>
+            <thead>
+                <tr>
+                    <th>Region</th>
+                    <th>Week 1</th>
+                    <th>Week 2</th>
+                    <th>Week 3</th>
+                    <th>Week 4</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>North</td>
+                    <td>$15,000</td>
+                    <td>$18,000</td>
+                    <td>$16,500</td>
+                    <td>$20,000</td>
+                    <td>$69,500</td>
+                </tr>
+                <tr>
+                    <td>South</td>
+                    <td>$12,000</td>
+                    <td>$14,500</td>
+                    <td>$13,000</td>
+                    <td>$15,500</td>
+                    <td>$55,000</td>
+                </tr>
+                <tr>
+                    <td>East</td>
+                    <td>$20,000</td>
+                    <td>$22,000</td>
+                    <td>$21,000</td>
+                    <td>$24,000</td>
+                    <td>$87,000</td>
+                </tr>
+                <tr>
+                    <td>West</td>
+                    <td>$18,000</td>
+                    <td>$19,500</td>
+                    <td>$17,000</td>
+                    <td>$21,500</td>
+                    <td>$76,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Grand Total</td>
+                    <td>$65,000</td>
+                    <td>$74,000</td>
+                    <td>$67,500</td>
+                    <td>$81,000</td>
+                    <td>$287,500</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- Example 10: Complex Table with Colspan and Rowspan -->
+    <div class="example-section">
+        <h2>Example 10: Complex Table (Colspan + Rowspan)</h2>
+        <table>
+            <caption>Course Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>Math</td>
+                    <td>English</td>
+                    <td>Math</td>
+                    <td>English</td>
+                    <td>Math</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td rowspan="2">Science Lab</td>
+                    <td>History</td>
+                    <td rowspan="2">Science Lab</td>
+                    <td>History</td>
+                    <td>Computer</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Geography</td>
+                    <td>Geography</td>
+                    <td>Art</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td colspan="5" style="text-align: center; background-color: #ffe082;">LUNCH BREAK</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM</td>
+                    <td>PE</td>
+                    <td>Music</td>
+                    <td>PE</td>
+                    <td>Music</td>
+                    <td>PE</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer style="text-align: center; margin: 40px 0; padding: 20px; background: #333; color: white; border-radius: 8px;">
+        <p>&copy; 2024 HTML Table Examples - All table tags demonstrated</p>
+    </footer>
+
+</body>
+</html>
