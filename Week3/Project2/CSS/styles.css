@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+main {
+    border: 2px solid #000000;
+    max-width: 800px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    gap: 50px;
+}
+
+main > section {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.error span,
+.error input::placeholder {
+    color: red;
+}
+
+label {
+    font-size: 16px;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+input[type="confirm"] {
+    border: 2px solid #000000;
+    padding: 9px;
+    border-radius: 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+submit {
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+submit:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #000000;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile-section .progress {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(#000 0% 50%, #e0e0e0 50% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    isolation: isolate;
+}
+
+.profile-section .progress::before {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: white;
+    z-index: -1;
+}
+
+.progress{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #9f7d7d;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap{
+    background-color: rgb(234, 232, 232);
+    border-radius: 15px;
+    width: 100%;
+    padding: 5px;
+}
+
+.completed li {
+    line-height: 1.6;
+    font-size: 16px;
+    list-style: none;
+}
+
+.roadmap li.completed {
+    text-decoration: line-through;
+    color: #5a4c4c;
+}
+
+.roadmap li {
+    list-style: none;
+    padding: 5px;
+}
